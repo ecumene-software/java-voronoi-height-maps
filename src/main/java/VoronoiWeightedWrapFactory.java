@@ -1,9 +1,8 @@
-import ecumene.exo.sim.util.heightmap.channel.HeightChannel;
 import org.joml.Vector2f;
 import org.joml.Vector2i;
 
 public class VoronoiWeightedWrapFactory {
-    public static HeightChannel wrapHit(int sizex, int sizey, boolean denomalize, VoronoiPoint[] points){
+    public static HeightMap wrapHit(int sizex, int sizey, boolean denomalize, VoronoiPoint[] points){
         int sizeWrapX = sizex * 3;
         int sizeWrapY = sizey * 3;
 
@@ -28,7 +27,7 @@ public class VoronoiWeightedWrapFactory {
         return voronoi.getHit().crop(sizex, sizey, sizeWrapX - sizex, sizeWrapY - sizey);
     }
 
-    public static HeightChannel wrapDistance(int sizex, int sizey, boolean denomalize, VoronoiPoint[] points){
+    public static HeightMap wrapDistance(int sizex, int sizey, boolean denomalize, VoronoiPoint[] points){
         int sizeWrapX = sizex * 3;
         int sizeWrapY = sizey * 3;
 

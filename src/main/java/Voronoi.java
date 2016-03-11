@@ -1,6 +1,3 @@
-import ecumene.exo.sim.util.heightmap.channel.HeightChannel;
-import org.joml.Vector2f;
-
 public class Voronoi {
     public VoronoiPoint[] points;
 
